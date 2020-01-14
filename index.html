@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <title>BS4後台</title>
+  </head>
+  <body>
+
+
+
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">商務控制後台</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/list.html">列表</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<!-- ----------------------------------------container------------------------------------------------------------ -->
+    
+    <div class="container-fluid main mt-4">
+      <div class="row text-secondary">
+        <div class="col-lg-3 col-6">
+          <div class="card rounded-0 h-100">
+            <div class="card-body d-flex alight-text-center ">
+              <div class="text-secondary"><i class="far fa-money-bill-alt fa-4x d-none d-sm-block"></i></div>
+              <div class="text-center w-100">
+                <div class="h5">今日營收</div>
+                <div class="h3">192,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">          
+          <div class="card rounded-0  h-100">
+            <div class="card-body d-flex alight-text-center">
+              <div class="text-secondary"><i class="fas fa-users fa-4x d-none d-sm-block"></i></div>
+              <div class="text-center w-100">
+                <div class="h5">會員增加</div>
+                <div class="display-4">172</div>
+              </div>
+            </div>
+          </div></div>
+        <div class="col-lg-3 col-6">
+          <div class="card rounded-0 h-100">
+            <div class="card-body d-flex alight-text-center ">
+              <div class="text-secondary"><i class="fas fa-boxes fa-4x d-none d-sm-block"></i></div>
+              <div class="text-center w-100">
+                <div class="h5">今日營收</div>
+                <div class="h3">192,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="card rounded-0 h-100">
+            <div class="card-body d-flex alight-text-center ">
+              <div class="text-secondary"><i class="fas fa-sign-out-alt fa-4x d-none d-sm-block"></i></div>
+              <div class="text-center w-100">
+                <div class="h5">今日營收</div>
+                <div class="h3">192,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- ------------------------------------------------------------------------------------------------------ -->
+
+<div class="row mt-4">
+  <section class="col-lg-8">
+    <div class="card">
+      <div class="card-header">用戶來源</div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-8">
+            <canvas id="barCanvas"></canvas>
+          </div>
+          <div class="col-4">
+            <h3>Details</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nemo, fugiat porro omnis fuga perferendis ad blanditiis fugit accusantium quod maxime earum maiores illum quas iusto. Consectetur quia vero dolores?</p>
+
+            <h6>Google 來源</h6>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h6>Facebook  來源</h6>
+            <div class="progress">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h6>無法追蹤</h6>
+            <div class="progress">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="col-lg-4">
+    <div class="card rounded-0 h-100">
+      <div class="card-header">瀏覽器</div>
+      <div class="card-body">
+        <canvas class="chart-item"></canvas>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+<div class="card rounded-0 mt-4">
+  <div class="card-header">月營運狀態</div>
+  <div class="card-body">
+    <div class="d-flex">
+      <div class="form-inline">
+        <div class="form-group">
+          <label for="month" class="sr-only">month</label>
+          <select name="" id="month" class="form-control  form-control-sm">
+            <option value="9">9</option>
+            <option value="8">8</option>
+            <option value="7">7</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="ml-auto ">
+        <a href="" class="btn btn-outline-secondary btn-sm">下載列表</a>
+        <a href="" class="btn btn-outline-secondary  btn-sm">訂單管理</a>
+      </div>
+    </div>
+
+
+  <div class="table-responsive">
+  <table class="table">
+        <thead>
+          <tr>
+            <th width="15%">日期</th>
+            <th>訂單數</th>
+            <th>退費數</th>
+            <th>出貨數</th>
+            <th>有問題貨品</th>
+            <th width="150">營業額</th>
+            <th width="150">淨利潤</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9/1</td>
+            <td>300</td>
+            <td>1</td>
+            <td>250</td>
+            <td>3</td>
+            <td class="text-right">256,000</td>
+            <td class="text-right">168,000</td>
+          </tr>
+          <tr>
+            <td>9/2</td>
+            <td>300</td>
+            <td>1</td>
+            <td>250</td>
+            <td>3</td>
+            <td class="text-right">256,000</td>
+            <td class="text-right">168,000</td>
+          </tr>
+          <tr>
+            <td>9/3</td>
+            <td>300</td>
+            <td>1</td>
+            <td>250</td>
+            <td>3</td>
+            <td class="text-right">256,000</td>
+            <td class="text-right">168,000</td>
+          </tr>
+          <tr>
+            <td>9/4</td>
+            <td>300</td>
+            <td>1</td>
+            <td>250</td>
+            <td>3</td>
+            <td class="text-right">256,000</td>
+            <td class="text-right">168,000</td>
+          </tr>
+          <tr>
+            <td>9/5</td>
+            <td>300</td>
+            <td>1</td>
+            <td>250</td>
+            <td>3</td>
+            <td class="text-right">256,000</td>
+            <td class="text-right">168,000</td>
+          </tr>
+          <tr>
+            <td>9/6</td>
+            <td>300</td>
+            <td>1</td>
+            <td>250</td>
+            <td>3</td>
+            <td class="text-right">256,000</td>
+            <td class="text-right">168,000</td>
+          </tr>
+
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="6" class="text-right">月總營收</td>
+            <td class="text-right">3,750,500</td>
+          </tr>
+          <tr>
+            <td colspan="6" class="text-right">月總淨利潤</td>
+            <td class="text-right">2,140,500</td>
+          </tr>
+        </tfoot>
+      </table>
+</div>
+
+  </div>
+</div>
+
+
+ </div>
+
+ <footer class="mt-5 py-3 bg-light text-secondary text-center">
+  六角學院後台管理系統
+</footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+
+    <script>
+   $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+
+    // 編輯的 Modal 事件
+    $('#editModal').on('show.bs.modal', function (event) {
+      var btn= $(event.relatedTarget);
+      var title=btn.data('title');
+
+      var modal = $(this);
+      modal.find('.modal-title').text(title);
+    });
+
+    $('#removeModal').on('show.bs.modal', function (event) {
+      var btn= $(event.relatedTarget);
+      var title=btn.data('title');
+
+      var modal = $(this);
+      modal.find('.modal-title').text("確認刪除"+title);
+    })
+  });
+</script>
+<script>
+  window.chartColors = {
+    red: 'rgb(255, 99, 132)',
+    orange: 'rgb(255, 159, 64)',
+    yellow: 'rgb(255, 205, 86)',
+    green: 'rgb(75, 192, 192)',
+    blue: 'rgb(54, 162, 235)',
+    purple: 'rgb(153, 102, 255)',
+    grey: 'rgb(201, 203, 207)'
+  };
+
+  var randomScalingFactor = function () {
+    return Math.round(Math.random() * 100);
+  };
+
+  var config = {
+    type: 'pie',
+    data: {
+      datasets: [{
+        data: [
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+          randomScalingFactor(),
+        ],
+        backgroundColor: [
+          window.chartColors.red,
+          window.chartColors.orange,
+          window.chartColors.yellow,
+          window.chartColors.green,
+          window.chartColors.blue,
+        ],
+        label: 'Dataset 1'
+      }],
+      labels: [
+        "Red",
+        "Orange",
+        "Yellow",
+        "Green",
+        "Blue"
+      ]
+    },
+    options: {
+      responsive: true
+    }
+  };
+
+
+  // bar
+  var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  var colors = Chart.helpers.color;
+  var barChartData = {
+    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    datasets: [{
+      label: 'Dataset 1',
+      backgroundColor: colors(window.chartColors.red).alpha(0.5).rgbString(),
+      borderColor: window.chartColors.red,
+      borderWidth: 1,
+      data: [
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor()
+      ]
+    }, {
+      label: 'Dataset 2',
+      backgroundColor: colors(window.chartColors.blue).alpha(0.5).rgbString(),
+      borderColor: window.chartColors.blue,
+      borderWidth: 1,
+      data: [
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor(),
+        randomScalingFactor()
+      ]
+    }]
+
+  };
+
+  window.onload = function () {
+    // pie
+    document.querySelectorAll('.chart-item').forEach(function (item) {
+      config.data.datasets.forEach(function (dataset) {
+        dataset.data = dataset.data.map(function () {
+          return randomScalingFactor();
+        });
+      });
+      var ctx = item.getContext("2d");
+      window.myPie = new Chart(ctx, config);
+    })
+
+
+    // bar
+    var barCtx = document.getElementById("barCanvas").getContext("2d");
+    window.myBar = new Chart(barCtx, {
+      type: 'bar',
+      data: barChartData,
+      options: {
+        responsive: true,
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: 'Chart.js Bar Chart'
+        }
+      }
+    });
+
+  };
+</script>
+
+
+ 
+  </body>
+</html>
+
